@@ -4,8 +4,10 @@
   "description": "Node.js HTTP Web Server for the Kanbas application",
   "main": "index.js",
   "scripts": {
+    "start": "node App.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Darshan1510/kanbas-node-server-app.git"
@@ -26,6 +28,7 @@
   },
   "homepage": "https://github.com/Darshan1510/kanbas-node-server-app#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.19.2"
   }
 }
