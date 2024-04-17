@@ -26,8 +26,8 @@ export default function CourseRoutes(app) {
   });
 
   app.post("/api/courses", async (req, res) => {
-    const course = req.body;
-    const created = dao.createCourse(course);
+    const course = { id: new Date().getTime().toString(), ...req.body };
+    const created =await dao.createCourse(course);
     res.send(created);
   });
 
